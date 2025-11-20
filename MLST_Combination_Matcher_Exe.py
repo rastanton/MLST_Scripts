@@ -124,9 +124,10 @@ def MLST_Combined_Output(MLST_Combined_file, MLST_Scheme_File):
     for line in f:
         Name = line.split('\t')[0]
         ST = ST_Matcher_Line(MLST_List, line)
-        ST = ','.join(ST)
+        ST = ';'.join(ST)
         Out.write(Name + '\t' + ST + '\n')
     f.close()
     Out.close()
 
 MLST_Combined_Output(sys.argv[1], sys.argv[2])
+
