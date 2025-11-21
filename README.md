@@ -5,7 +5,7 @@ MLST_Combination_Matcher_Exe.py: This script can generate all possible multilocu
 
 Reqs: Python3
 
-The script requires an input of the file with the MLST calls (gnerated by the mlst tool) and a tab-delimited file of the scheme profiles.
+The script requires an input of the file with the MLST calls (gneerated by the mlst tool, e.g. by running "$ mlst *.fasta > MLST_Calls.txt") and a tab-delimited file of the scheme profiles, which can be downloaded from pubmlst.org.
 
 Usage:
 ```
